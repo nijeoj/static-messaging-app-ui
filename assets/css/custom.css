@@ -1,0 +1,432 @@
+@font-face {
+  font-family: roboto;
+  src: url('assets/fonts/roboto/Roboto-Regular-webfont.eot');
+  src: url('assets/fonts/roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto/Roboto-Regular-webfont.woff') format('woff'), url('../fonts/roboto/Roboto-Regular-webfont.ttf') format('truetype'), url('../fonts/roboto/Roboto-Regular-webfont.svg#icon') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  /* max-width: 400px;
+  max-height: 1000px; */
+  position: relative;
+  font-family: roboto;
+}
+
+.active-message {
+  background-color: #F9FAFC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #292C4A;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav a:hover,{
+  background-color: #555;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 640px) {
+  .topnav.responsive {position: relative;}
+
+  .topnav.responsive {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive {float: none;}
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* .chat-sidebar {
+    left: 36%;
+    width: 400px;
+    position: fixed;
+    z-index: 3000;
+    height: 1000px;
+    /* right: 0; */
+    top: 8;
+    /* padding-bottom: 10px; */
+    border: 1px solid rgba(29, 49, 91, .3);
+  } */
+}
+
+@media only screen and (min-width: 360px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .chat-sidebar {
+    left: 2%;
+    width: 344px;
+    position: fixed;
+    z-index: 3000;
+    height: 900px;
+    /* right: 4px; */
+    top: 8;
+    /* padding-bottom: 10px; */
+    border: 1px solid rgba(29, 49, 91, .3);
+  }
+}
+.topnav a.active {
+    background-color: #7C82BD;
+    color: white;
+}
+
+.active {
+    background-color: #7C82BD;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.btn-float {
+  background-color : #7C82BD;
+  right:10%;
+  bottom:25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 45px !important;
+}
+
+.chat-sidebar {
+  left: 68%;
+  width: 1000px;
+  position: fixed;
+  z-index: 3000;
+  height: 500px;
+  /* right: 0; */
+  top: 8;
+  /* padding-bottom: 10px; */
+  border: 1px solid rgba(29, 49, 91, .3);
+  overflow: hidden;
+}
+
+.chat-list{
+  overflow: auto;
+  height : 100%;
+  background-color: #E9EEF1;
+}
+
+.sidebar-name {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(144, 177, 199, 0.2);
+}
+
+.sidebar-name span {
+    padding-left: 5px;
+}
+
+.sidebar-name a {
+    display: inline-block;
+    margin-bottom: 5%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar-name:hover {
+    background-color:#F9FAFC;
+}
+
+.sidebar-name img {
+    width: 50px;
+    height: 50px;
+    vertical-align:middle;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.chatheader {
+  background-color: #292C4A;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0%;
+  height: 51px;
+  font-size: 12px;
+}
+
+
+.dot-red {
+  height: 18px;
+  width: 18px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  top: 21px;
+  right: 18px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 3px solid #f3eeee;
+}
+
+.dot-pink {
+  height: 18px;
+  width: 18px;
+  background-color: #EE4848;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  top: 21px;
+  right: 18px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 3px solid #f3eeee;
+}
+
+.dot-orange {
+  height: 18px;
+  width: 18px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  top: 21px;
+  right: 18px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 3px solid #f3eeee;
+}
+
+.dot-green {
+  height: 18px;
+  width: 18px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  top: 21px;
+  right: 18px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 3px solid #f3eeee;
+}
+
+.message-body{
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  top: 10px;
+  right: 5px;
+}
+
+.gray-text {
+  color: gray;
+}
+
+.chevron {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.3em;
+  border: 0.10em solid #989494;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  top: 19px;
+  padding-top: 3;
+}
+
+.chevron::after {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	/*left: 0.15em;*/
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: middle;
+	width: 0.45em;
+}
+
+.chevron.bottom:after {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.messaging {
+  position: absolute;
+  float: right !important;
+  right: 0;
+  top: 0;
+}
+
+@media only screen and (min-width: 1025px){
+  .chat-sidebar {
+    left: 68%;
+    width: 400px;
+    position: fixed;
+    z-index: 3000;
+    height: auto;
+    top: 8;
+    border: 1px solid rgba(29, 49, 91, .3);
+    overflow: hidden;
+  }
+}
+
+@media only screen and (width: 1024px){
+  .chat-sidebar {
+    left: 60%;
+    width: 400px;
+    position: fixed;
+    z-index: 3000;
+    height: auto;
+    top: 8;
+    border: 1px solid rgba(29, 49, 91, .3);
+    overflow: hidden;
+  }
+}
+
+@media only screen and (width: 568px){
+  .chat-sidebar {
+    left: 28%;
+    width: 400px;
+    position: fixed;
+    z-index: 3000;
+    height: 98%;
+    /* right: 0; */
+    top: 7px;
+    /* padding-top: 10px; */
+    border: 1px solid rgba(29, 49, 91, .3);
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (width: 375px){
+  .chat-sidebar {
+    left: 7px;
+    width: 96%;
+    position: fixed;
+    z-index: 3000;
+    height: 98%;
+    top: 7px;
+    border: 1px solid rgba(29, 49, 91, .3);
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (width: 667px){
+  .chat-sidebar {
+    left: 39%;
+    width: 400px;
+    position: fixed;
+    z-index: 3000;
+    height: 98%;
+    top: 7px;
+    border: 1px solid rgba(29, 49, 91, .3);
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (width: 736px){
+  .chat-sidebar {
+    left: 45%;
+    width: 400px;
+    position: fixed;
+    z-index: 3000;
+    height: 98%;
+    top: 7px;
+    border: 1px solid rgba(29, 49, 91, .3);
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (width: 812px){
+  .chat-sidebar {
+    left: 50%;
+    width: 400px;
+    position: fixed;
+    z-index: 3000;
+    height: 98%;
+    top: 7px;
+    border: 1px solid rgba(29, 49, 91, .3);
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (width: 768px){
+  .chat-sidebar {
+    left: 47%;
+    width: 96%;
+    position: fixed;
+    z-index: 3000;
+    height: 98%;
+    top: 7px;
+    border: 1px solid rgba(29, 49, 91, .3);
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (width: 320px){
+  .chat-sidebar {
+    left: 2%;
+    width: 96%;
+    position: fixed;
+    z-index: 3000;
+    height: 98%;
+    top: 8;
+    border: 1px solid rgba(29, 49, 91, .3);
+    overflow: hidden;
+  }
+}
