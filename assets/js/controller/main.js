@@ -1,17 +1,5 @@
 sampleui
 .controller('messageCtlr', function($scope) {
-  $scope.chat_list = [
-    {
-      "img" : "https://i.pinimg.com/originals/fe/15/dd/fe15dd8f704c74612ebe52ee11a1d454.jpg",
-      "name" : "Jenny Kim",
-      "message" : "Blackpink is the new Revolution"
-    },
-    {
-      "img" : "https://www.google.com.ph/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi5n8LKg4PcAhXKsY8KHRepBJMQjRx6BAgBEAU&url=http%3A%2F%2Fblack-pink.wikia.com%2Fwiki%2FLisa&psig=AOvVaw3Ui3OCQkDGQxdID_qbtsdI&ust=1530710611101966",
-      "name" : "Lalisa Manoban",
-      "message" : "Blackpink in your area"
-    }
-  ];
   $scope.hideSideChatBar = true;
   $scope.hideMsgBtn = false;
   var activeMsg = "msg1";

@@ -7,8 +7,6 @@
 }
 
 .container {
-  /* max-width: 400px;
-  max-height: 1000px; */
   position: relative;
   font-family: roboto;
 }
@@ -69,17 +67,7 @@
     text-align: left;
   }
 
-  /* .chat-sidebar {
-    left: 36%;
-    width: 400px;
-    position: fixed;
-    z-index: 3000;
-    height: 1000px;
-    /* right: 0; */
-    top: 8;
-    /* padding-bottom: 10px; */
-    border: 1px solid rgba(29, 49, 91, .3);
-  } */
+
 }
 
 @media only screen and (min-width: 360px) {
@@ -94,9 +82,9 @@
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
+  .topnav.responsive {float: none;}
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
     display: block;
     width: 100%;
     text-align: left;
@@ -107,9 +95,7 @@
     position: fixed;
     z-index: 3000;
     height: 900px;
-    /* right: 4px; */
     top: 8;
-    /* padding-bottom: 10px; */
     border: 1px solid rgba(29, 49, 91, .3);
   }
 }
@@ -123,7 +109,6 @@
     color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
 }
@@ -144,9 +129,7 @@
   position: fixed;
   z-index: 3000;
   height: 500px;
-  /* right: 0; */
   top: 8;
-  /* padding-bottom: 10px; */
   border: 1px solid rgba(29, 49, 91, .3);
   overflow: hidden;
 }
@@ -181,12 +164,12 @@
 }
 
 .sidebar-name img {
-    width: 50px;
-    height: 50px;
-    vertical-align:middle;
-    border-radius: 50%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  width: 40px;
+  height: 40;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .chatheader {
   background-color: #292C4A;
@@ -419,6 +402,19 @@
 }
 
 @media only screen and (width: 320px){
+  .chat-sidebar {
+    left: 2%;
+    width: 96%;
+    position: fixed;
+    z-index: 3000;
+    height: 98%;
+    top: 8;
+    border: 1px solid rgba(29, 49, 91, .3);
+    overflow: hidden;
+  }
+}
+
+@media only screen and (width: 360px){
   .chat-sidebar {
     left: 2%;
     width: 96%;
